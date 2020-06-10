@@ -7,6 +7,8 @@ using System.Linq;
 
 namespace APICliente.Controllers
 {
+    [Route("api/[Controller]")]
+    [ApiController]
     public class EnderecosController : ControllerBase
     {
         private readonly AppDbContext _context;
