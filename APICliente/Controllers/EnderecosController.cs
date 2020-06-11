@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace APICliente.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[Controller]")]
     [ApiController]
     public class EnderecosController : ControllerBase
@@ -105,7 +106,7 @@ namespace APICliente.Controllers
         }
 
         /// <summary>
-        /// Apaga um endereço pelo seu identificador enderecoId
+        /// Deleta um endereço pelo seu identificador enderecoId
         /// </summary>
         /// <param name="id">Código do endereço</param>
         /// <returns>Um objeto apagado</returns>

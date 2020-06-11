@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace APICliente.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[Controller]")]
     [ApiController]
     public class ClientesController : ControllerBase
@@ -114,7 +115,7 @@ namespace APICliente.Controllers
         }
 
         /// <summary>
-        /// Apaga um cliente pelo seu identificador clienteId
+        /// Deleta um cliente pelo seu identificador clienteId
         /// </summary>
         /// <param name="id">Código do cliente</param>
         /// <returns>Um objeto apagado</returns>

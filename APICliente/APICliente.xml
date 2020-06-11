@@ -67,7 +67,7 @@
         </member>
         <member name="M:APICliente.Controllers.ClientesController.Delete(System.Int32)">
             <summary>
-            Apaga um cliente pelo seu identificador clienteId
+            Deleta um cliente pelo seu identificador clienteId
             </summary>
             <param name="id">Código do cliente</param>
             <returns>Um objeto apagado</returns>
@@ -130,7 +130,7 @@
         </member>
         <member name="M:APICliente.Controllers.EnderecosController.Delete(System.Int32)">
             <summary>
-            Apaga um endereço pelo seu identificador enderecoId
+            Deleta um endereço pelo seu identificador enderecoId
             </summary>
             <param name="id">Código do endereço</param>
             <returns>Um objeto apagado</returns>
