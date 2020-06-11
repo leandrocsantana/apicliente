@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APICliente</name>
+    </assembly>
+    <members>
+        <member name="M:APICliente.Controllers.ClientesController.GetClientesEnderecos">
+            <summary>
+            Exibe uma relação de clientes e endereços
+            </summary>
+            <returns>Retorna uma lista de objetos Cliente e Endereco</returns>
+        </member>
+        <member name="M:APICliente.Controllers.ClientesController.Get">
+            <summary>
+            Exibe uma lista dos clientes
+            </summary>
+            <returns>Retorna uma lista de objetos Cliente</returns>
+        </member>
+        <member name="M:APICliente.Controllers.ClientesController.Get(System.Int32)">
+            <summary>
+            Obtém uma Cliente pelo Id
+            </summary>
+            <param name="id">Código do Cliente</param>
+            <returns>Objetos Clientes</returns>
+        </member>
+        <member name="M:APICliente.Controllers.ClientesController.Post(APICliente.Models.Cliente)">
+            <summary>
+            Inclui um  novo cliente
+            </summary>
+            <remarks>
+            
+            Exemplo  de request: 
+            
+                POST api/clientes
+                {
+                     "Nome": "Leandro",
+                     "Cpf": "095.590.797-78",
+                     "DataNascimento": "1984/01/07"
+                }
+            </remarks>
+            <param name="clienteId">Código do Cliente</param>
+            <returns>O objeto cliente incluído</returns>
+            <remarks>Retorna um objeto Cliente incluído</remarks>
+        </member>
+        <member name="M:APICliente.Controllers.ClientesController.Put(System.Int32,APICliente.Models.Cliente)">
+            <summary>
+            Altera um cliente de um determinado identificador
+            </summary>
+            <remarks>
+            
+            Exemplo  de request: 
+            
+                PUT api/clientes
+                {
+                     "clienteId": 6,
+                     "nome": "Rachel Barreto",
+                     "cpf": "123.456.789-00",
+                     "dataNascimento": "1985-02-08T00:00:00"
+                }
+            </remarks>
+            <param name="clienteId">Código do Cliente que deseja alterar</param>
+            <param name="nome">Nome se deseja alterar</param>
+            <param name="cpf">Cpf deseja alterar</param>
+            <param name="dataNascimento">Data de nascimento se deseja alterar</param>
+            <returns>O objeto endereco alterado</returns>
+            <remarks>Retorna um objeto Endereco alterado</remarks>
+        </member>
+        <member name="M:APICliente.Controllers.ClientesController.Delete(System.Int32)">
+            <summary>
+            Apaga um cliente pelo seu identificador clienteId
+            </summary>
+            <param name="id">Código do cliente</param>
+            <returns>Um objeto apagado</returns>
+        </member>
+        <member name="M:APICliente.Controllers.EnderecosController.Get">
+            <summary>
+            Exibe uma lista dos endereços
+            </summary>
+            <returns>Retorna uma lista de objetos Endereco</returns>
+        </member>
+        <member name="M:APICliente.Controllers.EnderecosController.Get(System.Int32)">
+            <summary>
+            Obtem um endereço pelo seu identificador enderecoId
+            </summary>
+            <param name="id">Código do endereço</param>
+            <returns>Um objeto Endereço</returns>
+        </member>
+        <member name="M:APICliente.Controllers.EnderecosController.Post(APICliente.Models.Endereco)">
+            <summary>
+            Inclui um  novo endereço
+            </summary>
+            <remarks>
+            
+            Exemplo  de request: 
+            
+                POST api/enderecos
+                {
+                     "Logradouro": "Rua Alfredo Cabussu",
+                      "Bairro": "Pavuna",
+                      "Cidade": "Rio de Janeiro",
+                      "Estado": "Rio de janeiro",
+                      "ClienteId": 4
+                }
+            </remarks>
+            <param name="enderecoId">Código do Endereco</param>
+            <returns>O objeto endereco incluído</returns>
+            <remarks>Retorna um objeto Endereco incluído</remarks>
+        </member>
+        <member name="M:APICliente.Controllers.EnderecosController.Put(System.Int32,APICliente.Models.Endereco)">
+            <summary>
+            Altera um endereço de um determinado identificador
+            </summary>
+            <remarks>
+            
+            Exemplo  de request: 
+            
+                PUT api/enderecos
+                {
+                     "enderecoId": 4,
+                     "Logradouro": "Rua Alfredo Cabussu",
+                      "Bairro": "Pavuna",
+                      "Cidade": "Rio de Janeiro",
+                      "Estado": "Rio de janeiro",
+                      "ClienteId": 4
+                }
+            </remarks>
+            <param name="enderecoId">Código do Endereco que deseja alterar</param>
+            <returns>O objeto endereco alterado</returns>
+            <remarks>Retorna um objeto Endereco alterado</remarks>
+        </member>
+        <member name="M:APICliente.Controllers.EnderecosController.Delete(System.Int32)">
+            <summary>
+            Apaga um endereço pelo seu identificador enderecoId
+            </summary>
+            <param name="id">Código do endereço</param>
+            <returns>Um objeto apagado</returns>
+        </member>
+    </members>
+</doc>
